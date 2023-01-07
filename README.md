@@ -8,4 +8,4 @@ Using web scraping the script gets the games of the first page of SkidrowReloade
 
 ![new-cracked-games-skidrowreloaded-web-scraping-2](https://user-images.githubusercontent.com/99426154/211173153-e6f26dfa-7374-41ea-ad4b-0c4f0d12442c.png)
 
-![web-scraping-spotify-playlist-2](https://user-images.githubusercontent.com/99426154/211097350-e6727a09-c9d7-480c-acdb-2547a0283e4d.png)
+
