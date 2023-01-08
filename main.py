@@ -17,11 +17,17 @@ print(soup.find(name="h2").a.get("href"))
 
 game_tags = [game.text for game in soup.find_all(name="h2")]
 game_links = [game_link.a.get("href") for game_link in soup.find_all(name="h2")]
+image_tag = [game.get("data-lazy-src") for game in soup.find_all(name="img", class_="aligncenter") if game.get("data-lazy-src") is not None]
+
 
 for game in game_links:
     print(game)
 
 for game in game_tags:
+    print(game)
+
+
+for game in image_tag:
     print(game)
 
 
@@ -49,13 +55,17 @@ html_end = '''
 a_tags = []
 
 for gameIndex in range(len(game_tags)):
-    hyperlink = u'<a href="'+game_links[gameIndex] + '">' + game_tags[gameIndex] + '</a>'
+    hyperlink = u'<a href="' + game_links[gameIndex] + '">' + game_tags[gameIndex] + '</a>'
+    image = f"<img src='{image_tag[gameIndex]}' alt='{game_tags[gameIndex]}'>"
     a_tags.append(hyperlink)
+    a_tags.append(image)
 
 for a in a_tags:
-    html_start += "\n" + a + "<br>" + "\n"
+    html_start += "\n" + a + "<br><br>" + "\n"
 
 html = html_start + html_end
+
+print(html)
 
 email_message = MIMEMultipart()
 email_message['From'] = email_from
