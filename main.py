@@ -33,7 +33,7 @@ PORT = 587
 connection = smtplib.SMTP(SMTP, PORT)
 connection.starttls()
 connection.login(user=email_from, password=password)
-email_to = "edernonato47@hotmail.com"
+email_to = "edernonato@outlook.com"
 games_email = ""
 
 html_start = f'''
