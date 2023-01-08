@@ -6,6 +6,7 @@ Using web scraping the script gets the games of the first page of SkidrowReloade
 
 <h4 align="center">Scraps the games of the first page of Skidrow Realoaded and sends them by email using a html format.</h4>
 
-![new-cracked-games-skidrowreloaded-web-scraping-2](https://user-images.githubusercontent.com/99426154/211173153-e6f26dfa-7374-41ea-ad4b-0c4f0d12442c.png)
+![new-cracked-games-skidrowreloaded-web-scraping-1](https://user-images.githubusercontent.com/99426154/211175446-cab502b9-0ec8-4bab-9fc3-01d01092d277.png)
+
 
 
